@@ -1,0 +1,36 @@
+[debug] [2021-07-22T17:42:44.447Z] ----------------------------------------------------------------------
+[debug] [2021-07-22T17:42:44.449Z] Command:       /usr/local/nvm/versions/node/v12.14.1/bin/node /usr/local/nvm/versions/node/v12.14.1/bin/firebase emulators:start --only hosting
+[debug] [2021-07-22T17:42:44.449Z] CLI Version:   9.16.0
+[debug] [2021-07-22T17:42:44.449Z] Platform:      linux
+[debug] [2021-07-22T17:42:44.450Z] Node Version:  v12.14.1
+[debug] [2021-07-22T17:42:44.450Z] Time:          Thu Jul 22 2021 17:42:44 GMT+0000 (Coordinated Universal Time)
+[debug] [2021-07-22T17:42:44.450Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-22T17:42:44.510Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-22T17:42:44.511Z] > authorizing via signed-in user (xiongxiong.pei@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2021-07-22T17:42:44.529Z] [hub] writing locator at /tmp/hub-secret-messaging-app-1cbfa.json
+[debug] [2021-07-22T17:42:44.558Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/secret-messaging-app-1cbfa/sites 
+[debug] [2021-07-22T17:42:44.701Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/secret-messaging-app-1cbfa/sites 200
+[debug] [2021-07-22T17:42:44.703Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/secret-messaging-app-1cbfa/sites {"sites":[{"name":"projects/973793685172/sites/secret-messaging-app-1cbfa","defaultUrl":"https://secret-messaging-app-1cbfa.web.app","appId":"1:973793685172:web:694cc41aa2acb2c4f671e1","type":"DEFAULT_SITE"}]}
+[debug] [2021-07-22T17:42:44.703Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/secret-messaging-app-1cbfa/webApps/1:973793685172:web:694cc41aa2acb2c4f671e1/config [none]
+[debug] [2021-07-22T17:42:45.052Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/secret-messaging-app-1cbfa/webApps/1:973793685172:web:694cc41aa2acb2c4f671e1/config 200
+[debug] [2021-07-22T17:42:45.052Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/secret-messaging-app-1cbfa/webApps/1:973793685172:web:694cc41aa2acb2c4f671e1/config {"projectId":"secret-messaging-app-1cbfa","appId":"1:973793685172:web:694cc41aa2acb2c4f671e1","databaseURL":"https://secret-messaging-app-1cbfa-default-rtdb.firebaseio.com","storageBucket":"secret-messaging-app-1cbfa.appspot.com","apiKey":"AIzaSyDVKYHFyCkmkqpZ3gTiRiHgie1pyjK3i7U","authDomain":"secret-messaging-app-1cbfa.firebaseapp.com","messagingSenderId":"973793685172","measurementId":"G-CN55W6G44B"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5001 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5001\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5001 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
